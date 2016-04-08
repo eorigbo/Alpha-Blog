@@ -1,1 +1,3 @@
-This is the read me for the first app of the complete rails course on Udemy
+This is the read me for the first app of the complete rails course on Udemygit
+
+Don't forget the SSH tab. Important

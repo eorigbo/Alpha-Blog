@@ -7,6 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!-- I decided to put UL tag outside loop instead of inside as shown in the tutorial. If there are errors as a result please put back in-->
+  <ul>
+	<% flash.each do |name, msg| %>
+		<li>
+			<%= msg %>
+		</li>
+	<% end %>
+	</ul>
 
 <%= yield %>
 

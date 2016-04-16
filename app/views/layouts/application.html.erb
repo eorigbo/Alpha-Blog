@@ -8,9 +8,11 @@
 </head>
 <body>
   <!-- I decided to put UL tag outside loop instead of inside as shown in the tutorial. If there are errors as a result please put back in-->
+  <%= render 'partials/navigation' %>
   <%= render 'partials/messages'%>
-
-<%= yield %>
-
+<div class="container">
+  <%= yield %>
+</div>
+<%= render 'partials/footer'%>
 </body>
 </html>

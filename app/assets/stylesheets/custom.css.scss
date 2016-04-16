@@ -1,2 +1,79 @@
+$navbar-default-bg: #2C91DE;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo{
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover{
+  color:#fff;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav li a{
+  color:#fff;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav .dropdown-menu li a{
+  color:#333333;
+  text-decoration: none;
+}
+
+.center{
+  text-align:center;
+}
+
+.jumbotron{
+  background-image: asset-url('alpha_blog_jumbotron.png');
+  background-size: cover;
+  height:550px;
+  color:#fff;
+}
+
+.jumbotron h1{
+  
+}
+
+.btn-home, .btn-home:visited{
+  background-color: #2C91DE;
+  border-color:#2C91DE;
+  color:#fff;
+}
+
+.btn-home:hover{
+  background-color: #303130;
+  border-color:#303130;
+  color:#fff;
+}
+
+.footer{
+  margin-top:0px;
+  padding-top:5px;
+  border-top: 1px solid grey;
+  color:#777;
+}
+.footer a{
+  text-decoration:none;  
+}
+
+.footer a:hover{
+  color:#222;
+} 
+
+.footer small{
+  float:left;
+}
+
+.footer ul{
+  float:right;
+  list-style:none;
+}
+

@@ -1,11 +1,4 @@
-<% if @article.errors.any?%>
-	<h2>The following errors prevented the article from getting created</h2>
-	<ul>
-		<% @article.errors.full_messages.each do |msg| %>
-		<li><%= msg %></li>
-		<% end %>
-	</ul>
-<% end %>
+<%= render 'partials/errors', obj: @article %>
 
 <h1 class="center">Create new article</h1>
 <%= render 'articles/partials/form'%>

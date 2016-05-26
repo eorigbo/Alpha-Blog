@@ -1,8 +1,15 @@
 <h1 class="center">Category: <%= @category.name %></h1>
+<% if logged_in? && current_user.admin?%>
+	<div class="row">
+		<div class="center">
+			<span class="badge edit_badge_margin"><%= link_to "Edit Category Name", edit_category_path(@category)%></span>
+		</div>
+	</div>
+<% end %>
 <div class="center">
-				<%= will_paginate @category_articles%>
+	<%= will_paginate @category_articles%>
 </div>
 <%= render 'partials/articles', obj: @category_articles%>
 <div class="center">
-				<%= will_paginate @category_articles%>
+		<%= will_paginate @category_articles%>
 </div>
